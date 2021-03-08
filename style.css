@@ -1,0 +1,187 @@
+body {
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+}
+
+
+/* HEADER */
+
+.header {
+    background: rgb(200, 204, 195);
+}
+
+.section {
+    max-width: 1024px;
+    background: rgba(124, 194, 170, 0.226);
+    margin: 0 auto;
+}
+
+.nav_inner {
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: bisque;
+    width: 1024px;
+}
+
+.nav_inner a {
+    padding-left: 15px;
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000000;
+    margin: 20px 0 20px 0;
+}
+
+.nav_inner a:last-child {
+    margin-right: 15px;
+}
+
+.nav_inner a:hover {
+    color: brown;
+    transition: all .2s linear;
+}
+
+#contacts,
+#summery,
+#skills,
+#education,
+#cod_examples,
+#english {
+    margin-bottom: 100px;
+    padding-top: 50px;
+}
+
+
+/* CONTACTS */
+
+#contacts h2,
+#summery h2,
+#skills h2,
+#education h2,
+#cod_examples h2,
+#english h2 {
+    text-align: center;
+    text-transform: uppercase;
+    color: darkcyan;
+    margin-bottom: 50px;
+}
+
+.contacts_inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacts_title {
+    color: darkcyan;
+    margin-right: 15px;
+    text-align: center;
+}
+
+.contacts_title img {
+    width: 200px;
+}
+
+.contact_subtitle {
+    width: 50%;
+    display: flex;
+    flex-flow: column;
+}
+
+.contact_subtitle a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 20px;
+    padding-bottom: 30px;
+}
+
+.contact_subtitle a i:hover {
+    color: brown;
+    cursor: pointer;
+    transition: all .2s linear;
+}
+
+
+/* SUMMERY */
+
+.summery_inner p {
+    padding: 0 40px 0 40px;
+    text-indent: 35px;
+    line-height: 2;
+}
+
+
+/* SKILLS */
+
+.skills_img {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.skills_img img {
+    width: 150px;
+    height: 150px;
+    padding: 0 30px 30px 0;
+}
+
+.skills_img img:hover {
+    transform: scale(1.4);
+    transition: all .3s linear;
+}
+
+
+/* EDUCATION */
+
+.education_inner li {
+    list-style: none;
+    text-align: center;
+    line-height: 2;
+}
+
+.education_inner span {
+    font-weight: bold;
+}
+
+
+/* ENGLISH */
+
+.english_inner {
+    text-align: center;
+}
+
+.english_inner span {
+    font-weight: bold;
+}
+
+
+/* FOOTER */
+
+#footer {
+    background: rgb(200, 204, 195);
+}
+
+.footer_inner {
+    text-align: center;
+}
+
+.footer_inner a {
+    text-decoration: none;
+    font-size: 20px;
+    text-align: center;
+    line-height: 3;
+    padding-right: 20px;
+    color: #000000;
+}
+
+.footer_inner a:hover {
+    color: brown;
+    transition: all .2s linear;
+}
