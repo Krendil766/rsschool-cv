@@ -59,3 +59,99 @@
                     </p>
                 </div>
             </div>
+            <div id="skills">
+                <h2>Skills</h2>
+                <div class="skills_inner">
+                    <div class="skills_img">
+                        <img src="img/html.png" alt="">
+                        <img src="img/css.png" alt="">
+                        <img src="img/js.png" alt="">
+                        <img src="img/react.png" alt="">
+                        <img src="img/redux.png" alt="">
+                        <img src="img/node.png" alt="">
+                        <img src="img/webpack.png" alt="">
+                        <img src="img/sass.png" alt="">
+                        <img src="img/bootstrap.png" alt="">
+                        <img src="img/gulp.png" alt="">
+                        <img src="img/git.png" alt="">
+                        <img src="img/jq.png" alt="">
+                        <img src="img/vsc.png" alt="">
+                        <img src="img/Ap.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div id="education">
+                <h2>Education</h2>
+                <div class="education_inner">
+                    <ol>
+                        <li><span> 2010-2015 -</span> Belarusian State University (specialty Geoinformation systems)</li>
+                        <li><span> 2015-2020 -</span> Ministry of Defense of the Republic of Belarus</li>
+                        <li><span> 2019-2021 -</span>Glo Academ webinars</li>
+                        <li><span> 2019-2021 -</span> TeachMeSkills courses</li>
+
+                    </ol>
+                </div>
+            </div>
+            <div id="cod_examples">
+                <h2>Code examples</h2>
+                <div class="cod_examples_inner">
+                    <pre>
+                        class FetchData {
+                            getResourse = async url => {
+                                const res = await fetch(url);
+                                if (!res.ok) {
+                                    throw new Error('Произошда ошибка ' + res.status)
+                                }
+                                return res.json();
+                            }
+                            getPost = () => {
+                                return this.getResourse('db/dataBase.json')
+                            }
+                        }
+                        class Posts {
+                            constructor({
+                                posts = []
+                            } = {}) {
+                                this.posts = posts;
+                            }
+                            addPost = tweet => {
+                                this.posts.push(new Post(tweet))
+                            }
+                            deletePost(id) {
+                                this.posts = this.posts.filter(item => {
+                                    return item.id !== id;
+                                })
+                            }
+                            likePost(id) {
+                                this.posts.filter((item => {
+                                    if (item.id === id) {
+                                        item.changeLike()
+                                    }
+                                }))
+                            }
+                        }
+                    </pre>
+
+                </div>
+            </div>
+            <div id="english">
+                <h2>English</h2>
+                <div class="english_inner">
+
+                    <p><span>A2.
+                </div>
+            </div>
+
+        </main>
+        <footer id="footer">
+            <div class="footer_inner">
+                <a href="https://www.instagram.com/oleg.kudelko/?hl=ru"><i class="fab fa-instagram"></i>oleg.kudelko</a>
+                <a href="https://github.com/Krendil766"><i class="fab fa-github"></i>Krendil766</a>
+                <a href="https://www.linkedin.com/in/%D0%BE%D0%BB%D0%B5%D0%B3-%D0%BA%D1%83%D0%B4%D0%B5%D0%BB%D1%8C%D0%BA%D0%BE-14ab561a3/"><i class="fab fa-linkedin"></i>Олег Куделько</a>
+            </div>
+        </footer>
+    </div>
+    </div>
+</body>
+
+</html>
